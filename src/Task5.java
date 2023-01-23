@@ -1,0 +1,24 @@
+public class Task5 {
+    public static void main(String[] args) {
+        int[][] arr = {{1,2,3,5,6},
+                {7,8,9,10,11}};
+        int sumEven = 0;
+        int sumOdd = 0;
+        for (int i = 0; i < arr.length; i++) {
+            for(int j = 0; j < arr[i].length; j++) {
+                if(arr[i][j]%2 == 0) {
+                    sumEven += arr[i][j];
+                }
+            }
+        }
+        for (int i = 0; i < arr.length; i++) {
+            for(int j = 0; j < arr[i].length; j++) {
+                if(arr[i][j]%2 != 0) {
+                    sumOdd += arr[i][j];
+                }
+            }
+        }
+        System.out.println(sumOdd);
+        System.out.println(sumEven);
+    }
+}
